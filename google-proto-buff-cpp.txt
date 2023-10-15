@@ -1,3 +1,5 @@
 for node js, 
 npm install zeromq@5
+protoc --cpp_out=. pointcloud.proto
+protoc --js_out=import_style=commonjs,binary:. pointcloud.proto
 g++ -std=c++17 C_file.cpp protofile.pb.cc -o binaryfilename `pkg-config --cflags --libs protobuf`
